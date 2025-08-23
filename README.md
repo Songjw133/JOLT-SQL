@@ -1,7 +1,7 @@
 # JOLT-SQL
 JOLT-SQL: Joint Loss Tuning of Text-to-SQL with Confusion-aware Noisy Schema Sampling (EMNLP 2025 Main)
 
-📄 [arXiv:2301.12345](https://arxiv.org/abs/2301.12345)
+📄 [arXiv:2301.12345](https://arxiv.org/abs/2505.14305)
 
 
 We are in the process of organizing the full code for release.
@@ -40,4 +40,16 @@ If you encounter an NLTK-related error, try the following:
 import nltk  
 nltk.download('punkt_tab') 
 ```
-----
+
+# Citation
+```
+@misc{song2025joltsqljointlosstuning,
+      title={JOLT-SQL: Joint Loss Tuning of Text-to-SQL with Confusion-aware Noisy Schema Sampling}, 
+      author={Jinwang Song and Hongying Zan and Kunli Zhang and Lingling Mu and Yingjie Han and Haobo Hua and Min Peng},
+      year={2025},
+      eprint={2505.14305},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.14305}, 
+}
+```
