@@ -1,5 +1,5 @@
 # JOLT-SQL
-JOLT-SQL: Joint Loss Tuning of Text-to-SQL with Confusion-aware Noisy Schema Sampling (EMNLP 2025 Main)
+[EMNLP 2025 Main] JOLT-SQL: Joint Loss Tuning of Text-to-SQL with Confusion-aware Noisy Schema Sampling
 
 📄 [arXiv:2301.12345](https://arxiv.org/abs/2505.14305)
 
