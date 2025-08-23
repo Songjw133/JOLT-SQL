@@ -30,7 +30,7 @@ import torch
 #Hyperparameters
 @dataclass
 class HyperParameters:
-    epoch: Optional[int] = field(default=4)
+    epoch: Optional[int] = field(default=5)
     train_batch_size: Optional[int] = field(default=1)
     eval_batch_size: Optional[int] = field(default=4)
     gradient_accumulation_steps: Optional[int] = field(default=6)
