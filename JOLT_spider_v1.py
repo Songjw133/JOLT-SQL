@@ -43,7 +43,7 @@ class HyperParameters:
     max_grad_norm: Optional[float] = field(default=1.0)
     output_dir: Optional[str] = field(default="spider_lora")
     log_step: Optional[int] = field(default=5)
-    eval_step: Optional[int] = field(default=200)
+    eval_step: Optional[int] = field(default=400)
     nef_tune:Optional[bool] = field(default=False)
     noise_alpha:Optional[int] = field(default=2)
     bf16:Optional[bool] = field(default=True)
@@ -1355,7 +1355,7 @@ class jolt_Trainer:
                         restore_pristine_base_model_state(model, self.base_model_state_dict_cpu_backup)
                         self.base_model_state_dict_cpu_backup=None
                         torch.cuda.empty_cache()
-                        if (score := eval_rusult[0]["EX"]) >= 0.88 and score>self.best_metric:
+                        if (score := eval_rusult[0]["EX"]) >= 0.86 and score>self.best_metric:
                             self.best_metric = score
                             unwrap_model = accelerator.unwrap_model(model)
                             self._save(unwrap_model, eval_rusult)
